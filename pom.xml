@@ -17,6 +17,11 @@
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.webjars.bower</groupId>
+                <artifactId>re-tree</artifactId>
+                <version>0.0.2</version>
+            </dependency>
+            <dependency>
                 <groupId>io.r2dbc</groupId>
                 <artifactId>r2dbc-bom</artifactId>
                 <version>Arabba-SR6</version>
