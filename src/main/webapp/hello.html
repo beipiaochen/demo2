@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+hello
+    <script type="text/javascript" language="javascript">
+
+        $(function(){
+            //请求参数
+            // var list = {};
+            $.ajax({
+                //请求方式
+                type : "GET",
+                //请求的媒体类型
+                // contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url : "http://localhost:8080/getUser",
+                //数据，json字符串
+                // data : JSON.stringify(list),
+                // dataType : "json",
+                //请求成功
+                success : function(result) {
+                    console.log(result);
+                },
+                //请求失败，包含具体的错误信息
+                error : function(e){
+                    console.log(e.status);
+                    console.log(e.responseText);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
